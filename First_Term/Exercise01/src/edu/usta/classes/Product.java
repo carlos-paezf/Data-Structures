@@ -9,12 +9,14 @@ package edu.usta.classes;
  * @author cpaez
  */
 public class Product {
+    // Definición de atributos
     private Integer cod;
     private String name;
     private Brand brand;
     private Double value;
     private Integer amount;
 
+    // Definición de constructores
     public Product() {
     }
 
@@ -26,6 +28,7 @@ public class Product {
         this.amount = amount;
     }
 
+    // Definición de Getters and Setters para consultar o modificar atributos
     public Integer getCod() {
         return cod;
     }

@@ -11,42 +11,47 @@ import java.util.Objects;
  * @author cpaez
  */
 public class Brand {
-    private Integer codBrand;
-    private String nameBrand;
+    // Definición de variables
+    private Integer cod;
+    private String name;
 
+    // Definición de constructores
     public Brand() {
     }
 
     public Brand(Integer cod, String name) {
-        this.codBrand = cod;
-        this.nameBrand = name;
+        this.cod = cod;
+        this.name = name;
     }
 
-    public Integer getCodBrand() {
-        return codBrand;
+    // Definición de Setters y Getters para obtener y modificar variables de la
+    // clase
+    public Integer getCod() {
+        return cod;
     }
 
-    public void setCodBrand(Integer codBrand) {
-        this.codBrand = codBrand;
+    public void setCod(Integer codBrand) {
+        this.cod = codBrand;
     }
 
-    public String getNameBrand() {
-        return nameBrand;
+    public String getName() {
+        return name;
     }
 
-    public void setNameBrand(String nameBrand) {
-        this.nameBrand = nameBrand;
+    public void setName(String nameBrand) {
+        this.name = nameBrand;
     }
 
+    // Sobreescritura de métodos propios de las clases en JAVA
     @Override
     public String toString() {
-        return "Brand{" + "codBrand=" + codBrand + ", nameBrand=" + nameBrand + '}';
+        return "Brand{" + "codBrand=" + cod + ", nameBrand=" + name + '}';
     }
 
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 13 * hash + Objects.hashCode(this.codBrand);
+        hash = 13 * hash + Objects.hashCode(this.cod);
         return hash;
     }
 
@@ -62,9 +67,9 @@ public class Brand {
             return false;
         }
         final Brand other = (Brand) obj;
-        if (!Objects.equals(this.nameBrand, other.nameBrand)) {
+        if (!Objects.equals(this.name, other.name)) {
             return false;
         }
-        return Objects.equals(this.codBrand, other.codBrand);
-    }    
+        return Objects.equals(this.cod, other.cod);
+    }
 }
