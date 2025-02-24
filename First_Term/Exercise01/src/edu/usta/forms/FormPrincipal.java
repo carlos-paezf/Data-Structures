@@ -23,7 +23,7 @@ public class FormPrincipal extends javax.swing.JPanel {
     private Brand[] arrBrands;
 
     // Definición de modelos por defecto para Table y ComboBox
-    private String[] columnNames = {"#", "Nombre", "Marca", "Value", "Cantidad"};
+    private String[] columnNames = { "#", "Nombre", "Marca", "Value", "Cantidad" };
     private DefaultTableModel tableModel = new DefaultTableModel(columnNames, 0);
     private DefaultComboBoxModel comboBoxModel = new DefaultComboBoxModel();
 
@@ -79,7 +79,7 @@ public class FormPrincipal extends javax.swing.JPanel {
      * aplicación si el usuario elige "Aceptar" (Sí).
      */
     private void closeWindow() {
-        String[] buttonTexts = {"Aceptar", "Cancelar"};
+        String[] buttonTexts = { "Aceptar", "Cancelar" };
 
         int option = JOptionPane.showOptionDialog(
                 panelContent, // Panel donde se mostrá el mensaje
@@ -118,7 +118,8 @@ public class FormPrincipal extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         panelPrincipal = new javax.swing.JPanel();
@@ -164,32 +165,30 @@ public class FormPrincipal extends javax.swing.JPanel {
         javax.swing.GroupLayout panelHeaderLayout = new javax.swing.GroupLayout(panelHeader);
         panelHeader.setLayout(panelHeaderLayout);
         panelHeaderLayout.setHorizontalGroup(
-            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHeaderLayout.createSequentialGroup()
-                .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 647, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnClose)
-                .addContainerGap())
-        );
+                panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelHeaderLayout.createSequentialGroup()
+                                .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 647, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnClose)
+                                .addContainerGap()));
         panelHeaderLayout.setVerticalGroup(
-            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(panelHeaderLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnClose))
-        );
+                panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 50,
+                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(panelHeaderLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnClose)));
 
         tbtProducts.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
+                new Object[][] {
+                        { null, null, null, null },
+                        { null, null, null, null },
+                        { null, null, null, null },
+                        { null, null, null, null }
+                },
+                new String[] {
+                        "Title 1", "Title 2", "Title 3", "Title 4"
+                }));
         jScrollPane1.setViewportView(tbtProducts);
 
         panelForm.setBackground(new java.awt.Color(204, 204, 204));
@@ -201,52 +200,51 @@ public class FormPrincipal extends javax.swing.JPanel {
         javax.swing.GroupLayout panelNameLayout = new javax.swing.GroupLayout(panelName);
         panelName.setLayout(panelNameLayout);
         panelNameLayout.setHorizontalGroup(
-            panelNameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelNameLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelNameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(inputName)
-                    .addGroup(panelNameLayout.createSequentialGroup()
-                        .addComponent(lblName)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
+                panelNameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelNameLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(panelNameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(inputName)
+                                        .addGroup(panelNameLayout.createSequentialGroup()
+                                                .addComponent(lblName)
+                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                .addContainerGap()));
         panelNameLayout.setVerticalGroup(
-            panelNameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelNameLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(inputName, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                panelNameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelNameLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblName)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(inputName, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                                .addContainerGap()));
 
         lblBrand.setText("Marca");
 
-        cbxBrand.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxBrand.setModel(
+                new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout panelBrandLayout = new javax.swing.GroupLayout(panelBrand);
         panelBrand.setLayout(panelBrandLayout);
         panelBrandLayout.setHorizontalGroup(
-            panelBrandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelBrandLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelBrandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cbxBrand, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(panelBrandLayout.createSequentialGroup()
-                        .addComponent(lblBrand)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
+                panelBrandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelBrandLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(
+                                        panelBrandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(cbxBrand, 0, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                        Short.MAX_VALUE)
+                                                .addGroup(panelBrandLayout.createSequentialGroup()
+                                                        .addComponent(lblBrand)
+                                                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addContainerGap()));
         panelBrandLayout.setVerticalGroup(
-            panelBrandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelBrandLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblBrand)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cbxBrand, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                panelBrandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelBrandLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblBrand)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cbxBrand, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                                .addContainerGap()));
 
         lblAmount.setText("Cantidad");
 
@@ -255,25 +253,24 @@ public class FormPrincipal extends javax.swing.JPanel {
         javax.swing.GroupLayout panelAmountLayout = new javax.swing.GroupLayout(panelAmount);
         panelAmount.setLayout(panelAmountLayout);
         panelAmountLayout.setHorizontalGroup(
-            panelAmountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelAmountLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelAmountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(inputAmount)
-                    .addGroup(panelAmountLayout.createSequentialGroup()
-                        .addComponent(lblAmount)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
+                panelAmountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelAmountLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(
+                                        panelAmountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(inputAmount)
+                                                .addGroup(panelAmountLayout.createSequentialGroup()
+                                                        .addComponent(lblAmount)
+                                                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addContainerGap()));
         panelAmountLayout.setVerticalGroup(
-            panelAmountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelAmountLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblAmount)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(inputAmount, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                panelAmountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelAmountLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblAmount)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(inputAmount, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                                .addContainerGap()));
 
         lblValue.setText("Valor");
 
@@ -282,25 +279,24 @@ public class FormPrincipal extends javax.swing.JPanel {
         javax.swing.GroupLayout panelValueLayout = new javax.swing.GroupLayout(panelValue);
         panelValue.setLayout(panelValueLayout);
         panelValueLayout.setHorizontalGroup(
-            panelValueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelValueLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelValueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(inputValue)
-                    .addGroup(panelValueLayout.createSequentialGroup()
-                        .addComponent(lblValue)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
+                panelValueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelValueLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(
+                                        panelValueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(inputValue)
+                                                .addGroup(panelValueLayout.createSequentialGroup()
+                                                        .addComponent(lblValue)
+                                                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addContainerGap()));
         panelValueLayout.setVerticalGroup(
-            panelValueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelValueLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblValue)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(inputValue, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                panelValueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelValueLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblValue)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(inputValue, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                                .addContainerGap()));
 
         btnRegister.setForeground(new java.awt.Color(0, 204, 102));
         btnRegister.setText("Registrar");
@@ -321,106 +317,124 @@ public class FormPrincipal extends javax.swing.JPanel {
         javax.swing.GroupLayout panelFormLayout = new javax.swing.GroupLayout(panelForm);
         panelForm.setLayout(panelFormLayout);
         panelFormLayout.setHorizontalGroup(
-            panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFormLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelValue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelAmount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelBrand, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(panelFormLayout.createSequentialGroup()
-                        .addComponent(btnRegister)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCancel)))
-                .addContainerGap())
-        );
+                panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelFormLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(panelName, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(panelValue, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(panelAmount, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(panelBrand, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(panelFormLayout.createSequentialGroup()
+                                                .addComponent(btnRegister)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED,
+                                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(btnCancel)))
+                                .addContainerGap()));
         panelFormLayout.setVerticalGroup(
-            panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFormLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panelName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(panelBrand, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRegister)
-                    .addComponent(btnCancel))
-                .addGap(70, 70, 70))
-        );
+                panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelFormLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(panelName, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                                .addComponent(panelBrand, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(panelAmount, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(panelValue, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(
+                                        panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(btnRegister)
+                                                .addComponent(btnCancel))
+                                .addGap(70, 70, 70)));
 
         javax.swing.GroupLayout panelContentLayout = new javax.swing.GroupLayout(panelContent);
         panelContent.setLayout(panelContentLayout);
         panelContentLayout.setHorizontalGroup(
-            panelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelContentLayout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                panelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelContentLayout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 506,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(panelForm, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
         panelContentLayout.setVerticalGroup(
-            panelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(panelForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                panelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(panelForm, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
 
         javax.swing.GroupLayout panelPrincipalLayout = new javax.swing.GroupLayout(panelPrincipal);
         panelPrincipal.setLayout(panelPrincipalLayout);
         panelPrincipalLayout.setHorizontalGroup(
-            panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
-                    .addComponent(panelContent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
+                panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(panelPrincipalLayout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(panelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, 688,
+                                                Short.MAX_VALUE)
+                                        .addComponent(panelContent, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))));
         panelPrincipalLayout.setVerticalGroup(
-            panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelContent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(panelContent, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addContainerGap()));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addContainerGap()));
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addContainerGap()));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnCancelActionPerformed
         cleanInputs();
-    }//GEN-LAST:event_btnCancelActionPerformed
+    }// GEN-LAST:event_btnCancelActionPerformed
 
+    /**
+     * La función `btnRegisterActionPerformed` se ejecuta al hacer clic en el
+     * botón de "Registrar". Valida los campos del formulario y crea un nuevo
+     * producto con los datos ingresados.
+     * 
+     * @param evt
+     */
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnRegisterActionPerformed
-        String name, value, amount;
-        int amountProduct, brandSelected, cod = 0;
-        double valueProduct = 0;
+        // Obtener el índice de la marca seleccionada
+        int brandSelected = cbxBrand.getSelectedIndex();
 
-        brandSelected = cbxBrand.getSelectedIndex();
-
-        name = inputName.getText();
-        value = inputValue.getText();
-        amount = inputAmount.getText();
-        cod = arrProducts.size() + 1;
+        // Obtener los valores de los campos de texto
+        String name = inputName.getText();
+        String value = inputValue.getText();
+        String amount = inputAmount.getText();
+        int cod = arrProducts.size() + 1;
 
         if (brandSelected != 0) {
+            // Validar que los campos no estén vacíos
             if (name.isEmpty() || value.isEmpty() || amount.isEmpty()) {
                 JOptionPane.showMessageDialog(
                         panelPrincipal,
@@ -428,19 +442,21 @@ public class FormPrincipal extends javax.swing.JPanel {
                         "Advertencia",
                         JOptionPane.WARNING_MESSAGE);
             } else {
+                // Validar que los campos de valor y cantidad sean numéricos
                 try {
-                    amountProduct = Integer.parseInt(amount);
-                    valueProduct = Double.parseDouble(value);
+                    int amountProduct = Integer.parseInt(amount);
+                    double valueProduct = Double.parseDouble(value);
 
+                    // Crear un nuevo producto y añadirlo al array
                     Product newProduct = new Product(
                             cod, name,
                             arrBrands[brandSelected - 1],
                             valueProduct,
-                            amountProduct
-                    );
+                            amountProduct);
 
                     arrProducts.add(newProduct);
 
+                    // Actualizar la tabla y limpiar los campos
                     fillTable();
                     cleanInputs();
                 } catch (NumberFormatException e) {
