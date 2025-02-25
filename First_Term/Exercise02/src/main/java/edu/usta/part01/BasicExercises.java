@@ -4,6 +4,7 @@
 
 package edu.usta.part01;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ public class BasicExercises {
      * @return The number of characters in the string
      */
     public int countCharacters(String text) {
-        // Insert Code Here
+        return text.length();
     }
 
     /**
@@ -33,7 +34,7 @@ public class BasicExercises {
      * @return The largest number
      */
     public int getLargestNumber(int a, int b, int c) {
-        // Insert Code Here
+        return Math.max(a, Math.max(b, c));
     }
 
     /**
@@ -43,7 +44,7 @@ public class BasicExercises {
      * @return The string in uppercase
      */
     public String toUpperCase(String text) {
-        // Insert Code Here
+        return text.toUpperCase();
     }
 
     /**
@@ -54,6 +55,10 @@ public class BasicExercises {
      * @return A vector with random numbers between 100 and 500
      */
     public List<Integer> getRandomVectorForNWithRange(int n) {
-        // Insert Code Here
+        List<Integer> vector = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            vector.add((int) (Math.random() * 400) + 100);
+        }
+        return vector;
     }
 }

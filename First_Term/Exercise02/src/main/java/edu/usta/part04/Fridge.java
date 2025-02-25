@@ -1,6 +1,6 @@
 package edu.usta.part04;
 
-public class Fridge {
+public class Fridge extends Appliance {
     /**
      * Inherits from Appliance
      * 
@@ -13,6 +13,26 @@ public class Fridge {
      * - Getters and Setters
      * - toString
      */
+    private Integer capacity;
 
-    // Insert Code Here
+    public Fridge() {
+    }
+
+    public Fridge(Integer cod, String brand, Double value, String amount, Integer capacity) {
+        super(cod, brand, value, amount);
+        this.capacity = capacity;
+    }
+
+    public Integer getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
+    }
+
+    @Override
+    public String toString() {
+        return "Fridge [capacity=" + capacity + "]";
+    }
 }
